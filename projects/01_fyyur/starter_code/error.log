@@ -1,1 +1,444 @@
 
+2020-12-23 21:41:13,012 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:41:22,248 ERROR: Exception on /artists/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 414, in create_artist_form
+    form = ArtistForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-23 21:41:35,009 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:43:56,471 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:44:17,590 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:55:25,817 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:55:35,665 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:57:32,512 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 21:57:40,611 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 22:00:01,783 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-23 22:02:29,667 INFO: errors [in /Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py:511]
+2020-12-24 00:23:02,775 ERROR: Exception on /shows/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 479, in create_shows
+    form = ShowForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 00:23:13,201 ERROR: Exception on /shows [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 474, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 746, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1240, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1237, in __mod__
+    return self.format % other
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1272, in __getitem__
+    return self.format_weekday(char, num)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1405, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 329, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-12-24 00:23:21,411 ERROR: Exception on /venues/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 221, in create_venue_form
+    form = VenueForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 00:29:57,787 ERROR: Exception on /shows/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 479, in create_shows
+    form = ShowForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 00:33:05,032 ERROR: Exception on /shows [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 474, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 746, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1240, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1237, in __mod__
+    return self.format % other
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1272, in __getitem__
+    return self.format_weekday(char, num)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1405, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 329, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-12-24 00:33:10,153 ERROR: Exception on /shows [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 474, in shows
+    return render_template('pages/shows.html', shows=data)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/shows.html", line 9, in block "content"
+    <h4>{{ show.start_time|datetime('full') }}</h4>
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 74, in format_datetime
+    return babel.dates.format_datetime(date, format)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 746, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1240, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1237, in __mod__
+    return self.format % other
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1272, in __getitem__
+    return self.format_weekday(char, num)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1405, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 329, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
+2020-12-24 00:33:29,556 ERROR: Exception on /venues/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 221, in create_venue_form
+    form = VenueForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 00:42:08,972 ERROR: Exception on /artists/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 414, in create_artist_form
+    form = ArtistForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 00:43:47,697 ERROR: Exception on /venues/create [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 221, in create_venue_form
+    form = VenueForm()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 274, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/form.py", line 131, in process
+    field.process(formdata)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/wtforms/csrf/core.py", line 43, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask_wtf/csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2020-12-24 09:36:25,775 ERROR: Exception on /artists/4 [GET] [in /Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py:1777]
+Traceback (most recent call last):
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 353, in show_artist
+    "venue_image_link": "https://images.unsplash.com/photo-1485686531765-ba63b07845a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80",
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/show_artist.html", line 1, in top-level template code
+    {% extends 'layouts/main.html' %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/layouts/main.html", line 103, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/templates/pages/show_artist.html", line 68, in block "content"
+    <h6>{{ show.start_time|datetime('full') }}</h6>
+  File "/Users/marwansaleh/Desktop/FSND/projects/01_fyyur/starter_code/app.py", line 74, in format_datetime
+    artist_image_link = db.Column(db.Integer, ForeignKey('Artist.image_link'))
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 746, in format_datetime
+    return parse_pattern(format).apply(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1240, in apply
+    return self % DateTimeFormat(datetime, locale)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1237, in __mod__
+    return self.format % other
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1272, in __getitem__
+    return self.format_weekday(char, num)
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 1405, in format_weekday
+    return get_day_names(width, context, self.locale)[weekday]
+  File "/Users/marwansaleh/.pyenv/versions/3.9.0/lib/python3.9/site-packages/babel/dates.py", line 329, in get_day_names
+    return Locale.parse(locale).days[context][width]
+AttributeError: 'NoneType' object has no attribute 'days'
